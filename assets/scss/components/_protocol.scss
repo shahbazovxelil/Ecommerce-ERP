@@ -1,0 +1,138 @@
+.customer-acts {
+    .protocol {
+        .protocol-item {
+            h2 {
+                border-bottom: 2px solid #000;
+            }
+
+            h6 {
+                font-size: 11px;
+                font-style: italic;
+            }
+        }
+
+        .protocol-title {
+            p {
+                font-weight: 600;
+
+               
+            }
+
+        }
+    }
+
+    .card {
+        .card-body {
+            table {
+
+                .table-head {
+                    tr {
+
+                        th {
+                            font-size: 10px !important;
+                        }
+                    }
+
+                }
+
+                tbody {
+                    td {
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                th,
+                td {
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}
+
+.signature {
+    position: relative;
+
+    &::before {
+
+        content: "";
+        position: absolute;
+        background: #171616;
+        left: 35px;
+        bottom: 0px;
+        width: 108px;
+        height: 1px;
+    }
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+    width: 88%;
+    border-top: 1px solid #000;
+}
+
+
+
+
+
+@media print {
+    
+    .print-page {
+        page-break-before: always;
+        margin-bottom: 30px;
+    }
+    .print-page-always {
+        page-break-after: always;
+    }
+    td {
+        font-size: 9px !important;
+    }
+    .t-head{
+        display:table-header-group;
+    }
+    .t-body{
+        display:table-footer-group;
+        margin-bottom: 30px;
+    }
+    .row {
+        &.mt-5 {
+            margin: 0 !important;
+        }
+
+        .aqti-logo {
+
+            margin: 0 !important;
+            
+        }
+    }
+    #back-to-top{
+        display: none !important;
+    }
+   
+    .print-btn{
+        display: none !important;
+    }
+    .footer{
+       .card{
+        display: none !important;
+       }
+           
+      
+    }
+    .modal{
+        display: none !important;
+    }
+   
+}
+
+@media screen {
+    .page-footer {
+        display: none;
+      
+      
+    }
+}
